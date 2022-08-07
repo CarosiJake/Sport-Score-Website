@@ -1,0 +1,44 @@
+p {
+
+
+    color: red; 
+
+
+} /*The selector "p" is telling the CSS we want to target all paragraphs within our HTML and apply the properties listed within the brackets ({}).*/
+
+body {
+
+    background-color: lightgray; 
+
+} /*Transforms the background color of our body (AKA the visible page) from white to light gray*/
+  
+h1 {
+    font-size: 24px; 
+} /*Reduces font size for our main page title*/
+
+
+.text {
+     color: green;
+} /*Changes color of any element I tag with the "class" attribute to green (overriding paragraph rule above it */
+
+
+
+#scoreBoard {
+    width: 300px;
+    height: auto;
+} /*Changes the width of my smiley face image to 300px and sets the height to automatically scale */
+
+@media only screen and (max-width: 400px) {
+    #smiley {
+      width: 300px;
+    }
+  } /*A media query is a CSS rule that instructs the CSS to behave differently based on the width of the viewport (AKA the screen/browser width the web page is displaying in).*/
+
+
+
+@media only screen and (max-width: 300px) {
+  #smiley {
+    max-width: 300px;
+    width: 100%;
+  }
+}

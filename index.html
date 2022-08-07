@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!--A declaration to the browser that this is an HTML document type which will tell it how to process our code -->
+
+<html lang="en"> <!--An opening tag to wrap all of our HTML so the browser knows where our code starts and where it ends (note the closing </html> tag)-->
+
+
+    <head> <!--An opening tag to contain all the nonvisible information about our web page, also known as metadata-->
+
+
+        <title>Sport Scores Website</title> <!--HTML element tells the browser what we'd like our web page to be named.-->
+ 
+
+        <link rel="stylesheet" href="style.css"> <!--For our CSS to affect our HTML, we need to tell the browser to apply the CSS. The process to do this is straightforward. We simply need to add a <link> element to our <head>.-->
+
+
+        <meta charset="UTF-8">
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--The meta tag tells all browsers and devices to treat pixel measurements the same.-->
+
+    </head> <!--An closing tag to contain all the nonvisible information about our web page, also known as metadata-->
+
+
+    <body> <!--An opening tag to contain all the visible content on our web page-->
+
+        <h1 class="text">Sport Score Website</h1> <!--The main title for our web page. HTML has heading levels 1-6 (i.e. <h1>-<h6>). It will display the largest by default since it's given the most weight, and it's a best practice to only have one <h1> on a page.-->
+ 
+        <p class="text">Get scores to games without the over exagerated news that comes with it.</p> <!-- A paragraph element.-->
+
+        <img id="scoreBoard" alt="Score Board" src="https://m.media-amazon.com/images/I/A1fqCtFndrL._AC_SL1500_.jpg"> <!-- An image element. Note that <img> has no closing tag. This is because it has no text to wrap around (which <h1> and <p> do).-->
+
+
+            <script>
+                // Identifying our image
+                const scoreBoard = document.querySelector("#scoreBoard");
+        
+                // Adding reaction when image is clicked
+                smiley.addEventListener("click", () => {
+                   alert(`Smiley says "Welcome!"`);
+                });
+
+              </script>
+
+    </body> <!--An closing tag to contain all the visible content on our web page-->
+
+
+</html> <!--An closing tag to wrap all of our HTML so the browser knows where our code starts and where it ends-->
