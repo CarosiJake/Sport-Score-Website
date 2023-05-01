@@ -1,8 +1,18 @@
+.homeContainer{
+
+  text-align: center;
+
+}
+
+.mlbContainer{
+
+  text-align: center;
+
+}
+
 p {
 
-
-    color: red; 
-
+    color: green; 
 
 } /*The selector "p" is telling the CSS we want to target all paragraphs within our HTML and apply the properties listed within the brackets ({}).*/
 
@@ -27,6 +37,36 @@ h1 {
     width: 300px;
     height: auto;
 } /*Changes the width of my smiley face image to 300px and sets the height to automatically scale */
+
+
+ul {
+  text-align: center;
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 400px) {
     #smiley {

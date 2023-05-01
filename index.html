@@ -16,29 +16,32 @@
 
 
         <meta name="viewport" content="width=device-width, initial-scale=1"> <!--The meta tag tells all browsers and devices to treat pixel measurements the same.-->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+
+
 
     </head> <!--An closing tag to contain all the nonvisible information about our web page, also known as metadata-->
 
 
     <body> <!--An opening tag to contain all the visible content on our web page-->
-
-        <h1 class="text">Sport Score Website</h1> <!--The main title for our web page. HTML has heading levels 1-6 (i.e. <h1>-<h6>). It will display the largest by default since it's given the most weight, and it's a best practice to only have one <h1> on a page.-->
+        <div class = "homeContainer">
+            <h1 class="text">Sport Score Website</h1> <!--The main title for our web page. HTML has heading levels 1-6 (i.e. <h1>-<h6>). It will display the largest by default since it's given the most weight, and it's a best practice to only have one <h1> on a page.-->
  
-        <p class="text">Get scores to games without the over exagerated news that comes with it.</p> <!-- A paragraph element.-->
+            <p class="text">Get scores to games without the over exagerated news that comes with it.</p> <!-- A paragraph element.-->
 
-        <img id="scoreBoard" alt="Score Board" src="https://m.media-amazon.com/images/I/A1fqCtFndrL._AC_SL1500_.jpg"> <!-- An image element. Note that <img> has no closing tag. This is because it has no text to wrap around (which <h1> and <p> do).-->
+            <img id="scoreBoard" alt="Score Board" src="https://m.media-amazon.com/images/I/A1fqCtFndrL._AC_SL1500_.jpg"> <!-- An image element. Note that <img> has no closing tag. This is because it has no text to wrap around (which <h1> and <p> do).-->
 
+            <ul>
 
-            <script>
-                // Identifying our image
-                const scoreBoard = document.querySelector("#scoreBoard");
-        
-                // Adding reaction when image is clicked
-                smiley.addEventListener("click", () => {
-                   alert(`Smiley says "Welcome!"`);
-                });
+                <li>NFL Scores</li>
+                <li>NBA Scores</li>
+                <li><a href="mlbScores.html">MLB Scores</a></li>
+                <li>NHL Scores</li>
 
-              </script>
+            </ul>
+        </div>
 
     </body> <!--An closing tag to contain all the visible content on our web page-->
 
